@@ -14,7 +14,10 @@
   "bin": {
     "auth0-password-grant": "./bin/auth0-password-grant.sh"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.18.0",
+    "fs-extra": "^5.0.0"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "commander": "^2.15.1",
