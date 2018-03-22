@@ -1,0 +1,42 @@
+{
+  "name": "auth0-password-grant",
+  "version": "0.0.0",
+  "description": "CLI Auth0 access tokens through the Resource Owner Password Grant",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib",
+    "bin"
+  ],
+  "scripts": {
+    "test": "echo 'No Tests Configured' # mocha tests/**/*.js -R spec"
+  },
+  "bin": {
+    "auth0-password-grant": "./bin/auth0-password-grant.sh"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "commander": "^2.15.1",
+    "eslint-config-cimpress-atsquad": "^1.0.14",
+    "glob": "^5.0.15",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3",
+    "travis-build-tools": "~1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wparad/auth0-password-grant.js.git"
+  },
+  "keywords": [
+    "auth0",
+    "login",
+    "password-grant"
+  ],
+  "author": "Warren Parad <wparad@gmail.com> (http://wparad.github.io)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/wparad/auth0-password-grant.js"
+  },
+  "homepage": "https://github.com/wparad/auth0-password-grant.js#readme"
+}

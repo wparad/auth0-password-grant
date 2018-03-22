@@ -1,4 +1,5 @@
 # auth0-password-grant
+This is a port of the original [auth0-password-grant](https://github.com/Igrom/auth0-password-grant) to a npm package.
 CLI Auth0 access tokens.
 
 auth0-password-grant is a command-line tool to quickly provision new Auth0 access tokens using the Resource Owner Password Grant.
@@ -25,19 +26,9 @@ Features:
 - comprehensive **man** pages
 
 ## How to install
-Mac OS users (Homebrew):
 ```sh
-brew install jq
-
-brew tap Igrom/tap
-brew install auth0-password-grant
-```
-
-Linux:
-```sh
-git clone https://github.com/Igrom/auth0-password-grant.git
-cd auth0-password-grant
-./linux-install.sh
+apt install jq
+yarn global install auth0-password-grant
 ```
 
 ## Recommendations
@@ -48,7 +39,7 @@ For common workflows it is recommended to create the following shorthand:
 to quickly construct a valid Authorization header and put it in the clipboard.
 
 ## Author
-Igor Sowinski \<igorsowinski.mail@gmail.com\>
+Warren Parad
 
 ## COPYRIGHT
-Copyright © 2018 Igor Sowinski.  Licensed under the 3-clause BSD license.
+Copyright © 2018 Warren Parad.  Licensed under the 3-clause BSD license.
