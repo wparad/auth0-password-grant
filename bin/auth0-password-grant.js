@@ -4,6 +4,7 @@
 const commander = require('commander');
 const path = require('path');
 const Auth0 = require('../lib/auth0');
+const exec = require('child_process').exec;
 
 let version = require(path.join(__dirname, '../package.json')).version;
 commander.version(version);
@@ -34,7 +35,12 @@ commander
   auth0.getToken(params)
   .then(token => {
     let prefix = options.bearer ? 'Bearer ' : '';
-    console.log('TOKEN:', `${prefix}${token}`);
+    let fullToken = `${prefix}${token}`;
+    console.log('TOKEN:', fullToken);
+    if (options.clip) {
+      return new Promise((resolve, reject) => exec(`echo -n ${fullToken} | xclip -selection clipbord`, error => error ? reject(error) : resolve()));
+    }
+    return Promise.resolve();
   })
   .catch(error => {
     console.log('Error: failed to retrieve access token.', `Details: ${error}`);
