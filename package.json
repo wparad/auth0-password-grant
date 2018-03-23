@@ -12,7 +12,8 @@
     "test": "echo 'No Tests Configured' # mocha tests/**/*.js -R spec"
   },
   "bin": {
-    "auth0-password-grant": "./bin/auth0-password-grant"
+    "auth0-password-grant": "./bin/auth0-password-grant",
+    "auth0-password-grant-javascript-hook": "./bin/auth0-password-grant.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
