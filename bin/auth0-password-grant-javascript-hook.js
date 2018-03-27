@@ -35,7 +35,7 @@ commander
   .then(token => {
     let prefix = options.bearer ? 'Bearer ' : '';
     let fullToken = `${prefix}${token}`;
-    console.log('TOKEN:', fullToken);
+    console.log(fullToken);
   })
   .catch(error => {
     console.log('Error: failed to retrieve access token.', `Details: ${error}`);

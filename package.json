@@ -13,7 +13,7 @@
   },
   "bin": {
     "auth0-password-grant": "./bin/auth0-password-grant",
-    "auth0-password-grant-javascript-hook": "./bin/auth0-password-grant.js"
+    "auth0-password-grant-javascript-hook": "./bin/auth0-password-grant-javascript-hook.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
